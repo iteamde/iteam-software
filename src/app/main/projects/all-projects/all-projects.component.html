@@ -1,0 +1,3 @@
+<div class="projects-wrapper w-100">
+  <app-project *ngFor="let project of projects; let i=index" [project]="project" [isRightSide]="i%2===1"></app-project>
+</div>

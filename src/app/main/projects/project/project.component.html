@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="project d-flex align-items-center" [ngClass]="{'flex-row-reverse': isRightSide}">
+    <div class="col-12 col-md-6" (click)="showDetails()">
+      <img class="w-100" [src]="project.imgUrl">
+    </div>
+    <div class="col-12 col-md-6 p-3">
+      <h2 class="link" (click)="showDetails()">A System for Efficient Car Service Scheduling and Warehouse Management</h2>
+      <p>{{project.description}}
+      </p>
+    </div>
+  </div>
+</div>

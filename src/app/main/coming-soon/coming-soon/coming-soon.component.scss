@@ -1,0 +1,40 @@
+@import "../../../../assets/styles/variables";
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: $primaryDarkColor;
+  color: white;
+
+  img {
+    margin-top: 20vh;
+  }
+
+  hr {
+    border-top: 2px solid $gold;
+    width: 450px;
+  }
+
+  i {
+    font-size: 30px;
+
+    &.color-icon {
+      color: $gold;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      margin-top: 20vh;
+      width: 80%;
+    }
+
+    hr {
+      width: 90%;
+    }
+  }
+}
